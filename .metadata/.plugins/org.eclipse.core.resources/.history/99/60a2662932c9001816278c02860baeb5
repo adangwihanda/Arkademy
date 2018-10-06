@@ -1,0 +1,29 @@
+package nomorEmpat;
+
+public class CNomorEmpat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*
+		int a = 12;
+		String str = Integer.toString(a);
+		System.out.print(str);
+		*/
+		int Count=0;
+		for(int i=0;i<10;i++){
+			String angka = Integer.toString(i);
+			
+			if(angka.indexOf("3")==0){
+				continue;
+			} else Count++;
+			System.out.println("nilai i adalah :"+angka);
+		}
+		
+		System.out.print("Jumlah Angka 3 pada deret 0 - 100 adalah : "+Count);
+		
+		
+		
+	}
+
+}

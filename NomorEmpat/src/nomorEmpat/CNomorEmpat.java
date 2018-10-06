@@ -1,0 +1,25 @@
+package nomorEmpat;
+
+public class CNomorEmpat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		
+		int Count = 0;
+		int jmlUji=100; 
+		for(int a=0;a<jmlUji+1;a++){
+			String angka = Integer.toString(a);
+			char[] kar3 = angka.toCharArray();
+
+			for (int i=0; i<kar3.length; i++) {
+				if (kar3[i] == '3') 
+				Count++;	   
+			} 
+			
+		}
+		System.out.print("Jumlah angka 3 pada urutan 1 s.d. "+jmlUji+ " adalah : "+Count);
+
+	}
+
+}

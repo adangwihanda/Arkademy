@@ -1,0 +1,26 @@
+package nomorEmpat;
+
+public class CNomorEmpat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	//	int Count = 0;
+		
+		int Count = 0;
+		int jmlUji=20; 
+		for(int a=0;a<jmlUji;a++){
+			String angka = Integer.toString(a);
+			char[] kar3 = angka.toCharArray();
+			
+	//	int Count = 0;	   
+		for (int i=0; i<kar3.length; i++) {
+			if (kar3[i] == '3') 
+			Count++;	   
+		} 
+			
+		}
+		System.out.print(Count);
+	}
+
+}

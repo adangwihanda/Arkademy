@@ -1,0 +1,21 @@
+package nomorTiga;
+import java.util.Scanner;
+
+public class CNomorTiga {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		int tahun1 = input.nextInt();
+		int bulan1 = input.nextInt();
+		int tanggal1 = input.nextInt();
+		
+		int tahun2 = input.nextInt();
+		int bulan2 = input.nextInt();
+		int tanggal2 = input.nextInt();
+	
+		
+		
+	}
+
+}

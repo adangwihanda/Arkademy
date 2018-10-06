@@ -1,0 +1,19 @@
+package nomorEmpat;
+
+public class CNomorEmpat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int a = 12;
+		
+		String str = Integer.toString(a);
+		
+		System.out.print(str);
+		
+		
+		
+		
+	}
+
+}

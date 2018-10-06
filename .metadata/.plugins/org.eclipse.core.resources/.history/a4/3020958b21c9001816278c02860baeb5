@@ -1,0 +1,36 @@
+package nomorDua;
+import java.util.Scanner;
+
+public class CNomorDua {
+
+	public static void main(String[] args) {
+		
+		int bil1 = 0, bil2=1, bilx=0;
+		
+		System.out.print("Masukan jumlah deret : ");
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt();
+		
+		for (int i = 1; i <= n; i++)
+	    {
+	        if(i == 1)
+	        {
+	            System.out.print(bil1+" ");
+	            continue;
+	        }
+	        if(i == 2)
+	        {
+	        	System.out.print(bil2+" ");
+	            continue;
+	        }
+	        bilx = bil1 + bil2;
+	        bil1 = bil2;
+	        bil2 = bilx;
+	        
+	        System.out.print(bilx+" ");
+	    }
+	  	
+		input.close();
+	}
+
+}

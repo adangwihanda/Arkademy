@@ -1,0 +1,32 @@
+package nomorEmpat;
+
+public class CNomorEmpat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*
+		int a = 12;
+		String str = Integer.toString(a);
+		System.out.print(str);
+		*/
+		int notThree=0;
+		int jmlUji=20; 
+		for(int i=0;i<jmlUji;i++){
+			String angka = Integer.toString(i);
+		
+		// uji tidak mengandung angka 3
+		//	if(angka.indexOf("3")==0){
+				notThree++;
+		//	} 
+			int nilai = angka.indexOf("3");
+		System.out.print(nilai);	
+		}
+	//	int Count = jmlUji - notThree;
+	//	System.out.print("Jumlah Angka 3 pada deret 0 - "+jmlUji+" adalah : "+Count);
+		
+		
+		
+	}
+
+}

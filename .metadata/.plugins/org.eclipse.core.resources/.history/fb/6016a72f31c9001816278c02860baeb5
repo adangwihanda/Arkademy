@@ -1,0 +1,33 @@
+package nomorEmpat;
+
+public class CNomorEmpat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*
+		int a = 12;
+		String str = Integer.toString(a);
+		System.out.print(str);
+		*/
+		int Count=0;
+		for(int i=0;i<101;i++){
+			String angka = Integer.toString(i);
+			
+			if(angka.indexOf("3")==0){
+				continue;
+			}else Count++;
+			/*
+			int Count = 0;	   
+			
+			for (int j=0; j<angka.length; j++) {
+				if (angka[i] == '3') 
+				Count++;	   
+			} */
+		}
+		
+		
+		
+	}
+
+}

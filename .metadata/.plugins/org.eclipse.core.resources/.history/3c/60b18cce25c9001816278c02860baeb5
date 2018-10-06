@@ -1,0 +1,62 @@
+package nomorTiga;
+import java.util.Scanner;
+
+public class CNomorTiga {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Masukan Tahun Awal : ");
+		int tahun1 = input.nextInt();
+		
+		System.out.print("Masukan Bulan Awal : ");
+		int bulan1 = input.nextInt();
+		
+		System.out.print("Masukan Tanggal Awal : ");
+		int tanggal1 = input.nextInt();
+		
+		System.out.print("Masukan Tahun Akhir : ");
+		int tahun2 = input.nextInt();
+		
+		System.out.print("Masukan Tahun Akhir : ");
+		int bulan2 = input.nextInt();
+		
+		System.out.print("Masukan Tahun Akhir : ");
+		int tanggal2 = input.nextInt();
+		
+		int selisihTahun = 0;
+		int selisihBulan = 0;
+		int selisihTanggal = 0;
+		
+		int SelisihHari=0;
+			
+		// ----------------------
+		if((tanggal2-tanggal1)<0){
+		selisihTanggal=((30+tanggal2)-tanggal1);
+		}	else{
+		    selisihTanggal=tanggal2-tanggal1;
+		    }
+		
+		if((bulan2-bulan1<0)){
+		selisihBulan=(12+bulan2-bulan1);
+		selisihTahun=tahun2-tahun1-1;
+		}	else {
+		    selisihBulan=bulan2-bulan1;
+		    selisihTahun=tahun2-tahun1;
+		    }
+		
+		SelisihHari = selisihTahun*365 + selisihBulan*30+ selisihTanggal;
+		
+		System.out.print(SelisihHari);
+		// ----------------------
+		
+		
+		
+		
+		
+		
+		
+		
+		input.close();
+	}
+
+}
